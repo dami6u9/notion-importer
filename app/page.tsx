@@ -1,5 +1,5 @@
 // src/app/page.tsx
-import NotionForm from "@/components/ui/NotionForm";
+import NotionForm from "@/components/NotionForm";
 import { Toaster } from "sonner";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
           Completa el formulario para enviar datos a tu base de datos en Notion
         </p>
       </div>
-      <NotionForm />
+      {NotionForm()}
       <Toaster position="top-center" />
     </main>
   );
