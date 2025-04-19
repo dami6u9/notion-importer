@@ -1,4 +1,6 @@
 // src/app/page.tsx
+"use client"; // Marca este archivo como un Client Component
+
 import NotionForm from "@/components/NotionForm";
 import { Toaster } from "sonner";
 
@@ -13,7 +15,7 @@ export default function Home() {
           Completa el formulario para enviar datos a tu base de datos en Notion
         </p>
       </div>
-      {NotionForm()}
+      <NotionForm/>
       <Toaster position="top-center" />
     </main>
   );
