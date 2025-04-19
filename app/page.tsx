@@ -1,6 +1,6 @@
 // src/app/page.tsx
-import NotionForm from "@/components/NotionForm";
-import { Toaster } from "@/components/ui/toaster";
+import NotionForm from "@/components/ui/NotionForm";
+import { Toaster } from "sonner";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
         </p>
       </div>
       <NotionForm />
-      <Toaster />
+      <Toaster position="top-center" />
     </main>
   );
 }
